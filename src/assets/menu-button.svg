@@ -1,0 +1,23 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 2131328088">
+<g id="Rectangle 2953">
+<mask id="path-1-inside-1_1_13905" fill="white">
+<path d="M0 12C0 5.37258 5.37258 0 12 0H28C34.6274 0 40 5.37258 40 12V28C40 34.6274 34.6274 40 28 40H12C5.37258 40 0 34.6274 0 28V12Z"/>
+</mask>
+<path d="M0 12C0 5.37258 5.37258 0 12 0H28C34.6274 0 40 5.37258 40 12V28C40 34.6274 34.6274 40 28 40H12C5.37258 40 0 34.6274 0 28V12Z" fill="url(#paint0_linear_1_13905)"/>
+<path d="M0 12C0 4.48893 6.08893 -1.6 13.6 -1.6H26.4C33.9111 -1.6 40 4.48893 40 12C40 6.25624 34.6274 1.6 28 1.6H12C5.37258 1.6 0 6.25624 0 12ZM40 40H0H40ZM0 40V0V40ZM40 0V40V0Z" fill="#3F4655" mask="url(#path-1-inside-1_1_13905)"/>
+</g>
+<g id="Group 2131327984">
+<path id="Vector" d="M18 14H30" stroke="#919399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M10 20H30" stroke="#919399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M18 26H30" stroke="#919399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M14 24L10 20L14 16" stroke="#919399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_13905" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#343A47"/>
+<stop offset="1" stop-color="#2C3140"/>
+</linearGradient>
+</defs>
+</svg>
