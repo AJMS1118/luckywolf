@@ -19,7 +19,7 @@ import {
 export const SmallNavbar = () => {
   return (
     <>
-      <div className={styles.small_navbar_container}>
+      <div className={styles.small_navbar_container} id="small-menu-container">
         <div className={styles.area_component_container}>
           <AreaComponent icon={lottery} label="Lottery" width={38} height={38} />
           <AreaComponent icon={favorites} label="Favorites" width={34} height={38} />

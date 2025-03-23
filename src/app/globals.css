@@ -4,23 +4,22 @@
   margin: 0;
 }
 
-/* Personalización de la barra de desplazamiento */
 ::-webkit-scrollbar {
-  height: 6px; /* Altura de la barra horizontal (más fina) */
-  width: 3px; /* Ancho de la barra vertical */
+  height: 6px;
+  width: 3px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1c1f28; /* Color del fondo de la barra */
+  background: #1c1f28;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4a4f5c; /* Color de la barra de desplazamiento */
-  border-radius: 1px; /* Bordes redondeados */
+  background: #4a4f5c;
+  border-radius: 1px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #5a5f6c; /* Color al pasar el cursor */
+  background: #5a5f6c;
 }
 
 html,

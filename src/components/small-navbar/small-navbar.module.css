@@ -1,3 +1,8 @@
+#small-menu-container::-webkit-scrollbar{
+  height: 6px; /* Altura de la barra horizontal (más fina) */
+  width: 3px; /* Ancho de la barra vertical */
+}
+
 .small_navbar_container {
   /*--------Declaracion de variables para el small navbar component*/
  --small-navbar-fill-color-1:  #171a23;

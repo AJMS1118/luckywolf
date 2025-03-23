@@ -23,4 +23,6 @@
   border: none;
   margin-top: 2px;
   background: var(--area-divider-color);
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
