@@ -1,0 +1,18 @@
+.right_navbar_container {
+  --right-navbar-background-color-1: #171a23;
+  --right-navbar-background-color-2: #181b24;
+  --right-navbar-shadow-color: rgba(16, 19, 26, 0.32);
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 352px;
+  height: 100dvh;
+  z-index: 0;
+  background: linear-gradient(
+    180deg,
+    var(--right-navbar-background-color-1) 0%,
+    var(--right-navbar-background-color-2) 100%
+  );
+  box-shadow: 0px 0px 12px 0px var(--right-navbar-shadow-color);
+}

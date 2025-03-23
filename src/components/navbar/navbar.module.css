@@ -1,0 +1,202 @@
+.nav_container {
+  /* -------------------------------------------*/
+  /* Declaracion de variables para el header */
+  /* -------------------------------------------*/
+  --navbar-gradient-color-1: #21242d;
+  --navbar-gradient-color-2: #1c1f28;
+  --navbar-shadow-color: rgba(39, 42, 52, 0.24);
+  --search-border-color: #303541;
+  --search-background-color: #1c202b;
+  --logo-text-color: #ffffff;
+  --singup-button-border-color: rgba(255, 255, 255, 0.15);
+  --singup-button-gradient-color-1: #6a7eff;
+  --singup-button-gradient-color-2: #4962ff;
+  --singup-button-gradient-color-3: #3a55ff;
+  --signup-button-shadow-color: rgba(0, 0, 0, 0.15);
+  --sport-section-background-color-on-hover: #1c202b;
+  --sport-section-shadow-color-on-hover: rgba(0, 0, 0, 0.15);
+
+  position: fixed;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  width: 100dvw;
+  height: 72px;
+  background: linear-gradient(152deg, var(--navbar-gradient-color-1), var(--navbar-gradient-color-2));
+  box-shadow: 0px 4px 48px 0px var(--navbar-shadow-color) inset;
+  z-index: 10;
+}
+
+.header_section_1 {
+  display: flex;
+  /* justify-content: start;
+  align-items: center;
+  justify-items: center; */
+  margin-left: 20px;
+}
+
+.section_container {
+  display: flex;
+  align-items: center;
+  margin-left: 55px;
+  gap: 25px;
+}
+
+.section_container_1 {
+  display: flex;
+  place-items: center;
+  padding: 10px;
+  height: 100%;
+  cursor: pointer;
+}
+.section_container_1:hover {
+  background: var(--sport-section-background-color-on-hover);
+  box-shadow: 0px 6px 16px 0px var(--sport-section-shadow-color-on-hover) inset;
+  border-bottom: 2px solid var(--singup-button-gradient-color-2);
+}
+
+.crownd {
+  margin-top: 29px;
+  margin-bottom: 25px;
+  margin-left: -15px;
+}
+
+.section_container_2 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.section_container_2:hover {
+  background: var(--sport-section-background-color-on-hover);
+  box-shadow: 0px 6px 16px 0px var(--sport-section-shadow-color-on-hover) inset;
+  border-bottom: 2px solid var(--singup-button-gradient-color-2);
+}
+
+.sport_icon {
+  margin-top: 29px;
+  margin-bottom: 30px;
+}
+
+.menu_button {
+  margin-top: 16px;
+  margin-bottom: 18px;
+  margin-left: 24px;
+}
+
+.sports_text {
+  color: var(--logo-text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+  margin-top: 26px;
+  margin-bottom: 30px;
+  margin-left: -3px;
+}
+
+.casino_text {
+  color: var(--logo-text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+}
+
+.logo_text {
+  color: var(--logo-text-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+.header_section_2 {
+  display: flex;
+  align-items: center;
+  gap: 192px;
+
+  .login_section {
+    margin-right: 32px;
+  }
+
+  .search_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu_search {
+    width: 240px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    border: 1.2px solid var(--search-border-color);
+    background: var(--search-background-color);
+    padding: 0 40px 0 16px; /* Add padding for the icon and text */
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+  .menu_search::placeholder {
+    color: #9ca3af;
+    opacity: 0.7;
+  }
+
+  .search_icon {
+    position: absolute;
+    right: 12px;
+    top: 65%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Makes the icon not interfere with input clicks */
+  }
+
+  .login_button {
+    color: var(--logo-text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    margin-right: 24px;
+    margin-top: 27px;
+    margin-bottom: 29px;
+  }
+
+  .signup_button {
+    width: 122px;
+    height: 44px;
+    margin-top: 27px;
+    margin-bottom: 29px;
+    padding: 11px 32px 13px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: radial-gradient(
+      123.83% 99.06% at 49.75% 0%,
+      var(--singup-button-gradient-color-1) 0%,
+      var(--singup-button-gradient-color-2) 48.44%,
+      var(--singup-button-gradient-color-3) 100%
+    );
+    box-shadow: 0px 5.486px 14.629px 0px var(--singup-button-shadow-color);
+
+    .signup_text {
+      color: var(--logo-text-color);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px; /* 125% */
+    }
+  }
+}

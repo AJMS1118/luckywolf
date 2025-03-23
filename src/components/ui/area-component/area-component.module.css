@@ -1,0 +1,26 @@
+.area_component_container {
+  --area-component-label: #919399;
+  --area-divider-color: rgba(55, 60, 71, 0.53);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.area_component_label {
+  color: var(--area-component-label);
+  font-family: Jost;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px; /* 100% */
+}
+
+.area_divider {
+  width: 38px;
+  height: 1px;
+  border: none;
+  margin-top: 2px;
+  background: var(--area-divider-color);
+}
