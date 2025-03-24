@@ -1,0 +1,60 @@
+.menu_button_container {
+  --section-2-color: rgba(33, 42, 55, 0.32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 232px;
+  height: 44px;
+  border-radius: 12px;
+  border-top: 1.6px solid rgba(255, 255, 255, 0.15);
+  background: radial-gradient(
+    123.83% 99.06% at 49.75% 0%,
+    var(--blue-gradient-color-1) 0%,
+    var(--blue-gradient-color-2) 48.44%,
+    var(--blue-gradient-color-3) 100%
+  );
+  box-shadow: 0px 5.486px 14.629px 0px var(--shadow-blue-gradient-color);
+}
+
+.section_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+.section_1 {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  gap: 8px;
+}
+
+.section_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: var(--section-2-color);
+}
+
+.text {
+  color: #fff;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.number {
+  color: #fff;
+  font-family: Jost;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}

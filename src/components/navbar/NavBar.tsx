@@ -4,7 +4,11 @@ import Image from "next/image";
 import styles from "./navbar.module.css";
 import { logo, casino, menu_button, sports, search_icon } from "@/assets";
 
-export const NavBar = () => {
+type NavBarProps = {
+  toggleMenu: () => void;
+};
+
+export const NavBar = ({ toggleMenu }: NavBarProps) => {
   return (
     <header className={styles.nav_container}>
       <div className={styles.header_section_1}>
@@ -12,7 +16,7 @@ export const NavBar = () => {
           <Image src={logo} alt="logo" className={styles.logo} />
           <span className={styles.logo_text}>Lucky wolf</span>
         </div>
-        <div className={styles.menu_button}>
+        <div className={styles.menu_button} onClick={toggleMenu}>
           <Image src={menu_button} alt="" />
         </div>
         <div className={styles.section_container}>
@@ -28,7 +32,13 @@ export const NavBar = () => {
       </div>
       <div className={styles.header_section_2}>
         <div className={styles.search_container}>
-          <input type="search" name="" id="" placeholder="Search" className={styles.menu_search} />
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="Search"
+            className={styles.menu_search}
+          />
           <Image src={search_icon} alt="" className={styles.search_icon} />
         </div>
         <div className={styles.login_section}>
