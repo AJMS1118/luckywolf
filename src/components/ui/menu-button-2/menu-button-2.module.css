@@ -1,0 +1,29 @@
+.menu_button_container {
+  --section-2-color: rgba(33, 42, 55, 0.32);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 232px;
+  height: 44px;
+  border-radius: 12px;
+  border-top: 1.6px solid #3f4655;
+  background: linear-gradient(180deg, #343a47 0%, #2c3140 100%);
+  box-shadow: 0px 5.43px 14.48px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5.486px 14.629px 0px var(--shadow-blue-gradient-color);
+  cursor: pointer;
+}
+.section_1 {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  gap: 8px;
+}
+
+.text {
+  color: #fff;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}

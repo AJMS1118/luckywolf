@@ -13,6 +13,24 @@ import button_group from "./button-group.svg";
 import flat from "./flat.png";
 import support from "./support.svg";
 import connection from "./connection.svg";
+import heart from "./heart.svg";
+import recent_1 from "./recent_play_icon.svg";
+import seven from "./seven.svg";
+import down_arrow from "./down_arrow.svg";
+import up_arrow from "./up_arrow.svg";
+import slots from "./slots.svg";
+import scratch from "./scratch.svg";
+import casual from "./casual.svg";
+import craps from "./craps.svg";
+import live_casino from "./live_casino.svg";
+import lottery_casino from "./lottery-casino.svg";
+import cards from "./cards.svg";
+import mines from "./mines.svg";
+import poker from "./pocker.svg";
+import crash from "./crash.svg";
+import roulette from "./roulette.svg";
+import virtual_sports from "./visual_sports.svg";
+import fishing from "./fishing.svg";
 
 export {
   logo,
@@ -30,4 +48,22 @@ export {
   flat,
   support,
   connection,
+  heart,
+  recent_1,
+  seven,
+  down_arrow,
+  up_arrow,
+  slots,
+  scratch,
+  casual,
+  craps,
+  live_casino,
+  lottery_casino,
+  cards,
+  mines,
+  poker,
+  crash,
+  roulette,
+  virtual_sports,
+  fishing,
 };

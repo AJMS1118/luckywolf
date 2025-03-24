@@ -1,3 +1,10 @@
+:root {
+  --blue-gradient-color-1: #6a7eff;
+  --blue-gradient-color-2: #4962ff;
+  --blue-gradient-color-3: #3a55ff;
+  --shadow-blue-gradient-color: rgba(0, 0, 0, 0.15);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

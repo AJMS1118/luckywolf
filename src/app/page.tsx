@@ -1,12 +1,19 @@
+"use client";
+import { useState } from "react";
+import { NavBar, SmallNavbar, RightNavbar, LargeNavbar } from "@/components";
 import styles from "./page.module.css";
-import { NavBar, SmallNavbar, RightNavbar } from "@/components";
 
 export default function Home() {
+  const [isLargeNavbarOpen, setIsLargeNavbarOpen] = useState<boolean>(false);
+  const toggleMenu = () => {
+    setIsLargeNavbarOpen(!isLargeNavbarOpen);
+  };
   return (
     <div className={styles.page}>
-      <NavBar />
-      <SmallNavbar />
+      <NavBar toggleMenu={toggleMenu} />
+      <SmallNavbar isOpen={isLargeNavbarOpen} />
       <RightNavbar />
+      <LargeNavbar isOpen={isLargeNavbarOpen} />
     </div>
   );
 }

@@ -16,17 +16,50 @@ import {
   connection,
 } from "@/assets";
 
-export const SmallNavbar = () => {
+type SmallNavbarProps = {
+  isOpen: boolean;
+};
+
+export const SmallNavbar = ({ isOpen }: SmallNavbarProps) => {
   return (
     <>
-      <div className={styles.small_navbar_container} id="small-menu-container">
+      <div
+        className={styles.small_navbar_container}
+        style={{
+          opacity: isOpen ? "0" : "1",
+          transform: isOpen
+            ? "translateX(130px) translateZ(-200px)"
+            : "translateZ(0) translateX(0) ",
+          transition: "opacity 0.1s ease-in-out, transform 0.6s ease-in-out",
+        }}
+      >
         <div className={styles.area_component_container}>
-          <AreaComponent icon={lottery} label="Lottery" width={38} height={38} />
-          <AreaComponent icon={favorites} label="Favorites" width={34} height={38} />
+          <AreaComponent
+            icon={lottery}
+            label="Lottery"
+            width={38}
+            height={38}
+          />
+          <AreaComponent
+            icon={favorites}
+            label="Favorites"
+            width={34}
+            height={38}
+          />
           <AreaComponent icon={recent} label="Recent" width={38} height={38} />
-          <AreaComponent icon={casino_1} label="Casino" width={32} height={38} />
+          <AreaComponent
+            icon={casino_1}
+            label="Casino"
+            width={32}
+            height={38}
+          />
           <AreaComponent icon={sport} label="Sport" width={38} height={38} />
-          <AreaComponent icon={loterry_1} label="Lottery" width={38} height={38} />
+          <AreaComponent
+            icon={loterry_1}
+            label="Lottery"
+            width={38}
+            height={38}
+          />
         </div>
         <div className={styles.button_group_container}>
           <Image src={button_group} alt="" />
