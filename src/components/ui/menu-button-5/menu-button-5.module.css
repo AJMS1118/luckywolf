@@ -1,0 +1,143 @@
+.menu_button_container {
+  --section-2-color: rgba(33, 42, 55, 0.32);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 232px;
+  height: 50px;
+  background: #171a23;
+  border-radius: 12px;
+  box-shadow: 0px 5.486px 14.629px 0px var(--shadow-blue-gradient-color);
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.section_container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  z-index: 3;
+}
+
+.section_1 {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  gap: 8px;
+}
+
+.section_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: var(--section-2-color);
+}
+
+.text {
+  color: #fff;
+  font-family: var(--font-jost);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.menu_button_wrapper {
+  position: relative;
+  width: fit-content;
+  margin-bottom: var(--dropdown-space, 0);
+  transition: margin-bottom 0.3s ease;
+}
+
+.dropdown_menu {
+  position: absolute;
+  top: calc(100% - 15px);
+  left: 0;
+  width: 100%;
+  opacity: 1.24;
+  background: #171a23;
+  /* background: linear-gradient(180deg, #343a47 0%, #2c3140 100%); */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  animation: slideDown 0.3s ease;
+  padding-top: 15px;
+}
+
+.menu_item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.menu_item:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.menu_item_text {
+  color: #919399;
+  font-family: var(--font-jost);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  transition: color 0.2s ease;
+}
+.menu_item img {
+  transition: filter 0.2s ease;
+}
+
+.menu_item:hover .menu_item_text {
+  color: #ffffff;
+}
+
+.flag_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 44px;
+  max-width: 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border-top: 1.6px solid #3f4655;
+  background: linear-gradient(180deg, #343a47 0%, #2c3140 100%);
+}
+
+.arrow_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 28px;
+  max-width: 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border-top: 1.6px solid #3f4655;
+  background: linear-gradient(180deg, #343a47 0%, #2c3140 100%);
+  box-shadow: 0px 5.43px 14.48px 0px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

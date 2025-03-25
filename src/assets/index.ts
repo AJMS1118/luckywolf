@@ -32,6 +32,12 @@ import roulette from "./roulette.svg";
 import virtual_sports from "./visual_sports.svg";
 import fishing from "./fishing.svg";
 import down_arrow_1 from "./down_arrow_1.svg";
+import facebook from "./facebook.svg";
+import x from "./x.svg";
+import instagram from "./instagram.svg";
+import telegram from "./telegram.svg";
+import support_customer from "./support_customer.svg";
+import plain_down_arrow from "./plain_down_arrow.svg";
 
 export {
   logo,
@@ -68,4 +74,10 @@ export {
   virtual_sports,
   fishing,
   down_arrow_1,
+  facebook,
+  x,
+  instagram,
+  telegram,
+  support_customer,
+  plain_down_arrow,
 };
