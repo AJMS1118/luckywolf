@@ -10,7 +10,7 @@ export default function Home() {
   };
   return (
     <div className={styles.page}>
-      <NavBar toggleMenu={toggleMenu} />
+      <NavBar toggleMenu={toggleMenu} isOpen={isLargeNavbarOpen} />
       <SmallNavbar isOpen={isLargeNavbarOpen} />
       <RightNavbar />
       <LargeNavbar isOpen={isLargeNavbarOpen} />

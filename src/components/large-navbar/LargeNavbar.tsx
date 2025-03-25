@@ -1,8 +1,6 @@
 import React from "react";
-import { MenuButton } from "../ui/menu-button/MenuButton";
-import { MenuButton2 } from "../ui/menu-button-2/MenuButton2";
-import { MenuButton3 } from "../ui/menu-button-3/MenuButton3";
 import styles from "./large-navbar.module.css";
+import { MenuButton, MenuButton2, MenuButton3, MenuButton4 } from "../ui";
 
 type LargeNavbarProps = {
   isOpen: boolean;
@@ -24,6 +22,7 @@ export const LargeNavbar = ({ isOpen }: LargeNavbarProps) => {
           <MenuButton text="Favorites" number="5" />
           <MenuButton2 text="Recently Played" />
           <MenuButton3 text="Casino" />
+          <MenuButton4 text="Sports" />
         </div>
       </div>
     </>

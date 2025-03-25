@@ -31,6 +31,7 @@ import crash from "./crash.svg";
 import roulette from "./roulette.svg";
 import virtual_sports from "./visual_sports.svg";
 import fishing from "./fishing.svg";
+import down_arrow_1 from "./down_arrow_1.svg";
 
 export {
   logo,
@@ -66,4 +67,5 @@ export {
   roulette,
   virtual_sports,
   fishing,
+  down_arrow_1,
 };
