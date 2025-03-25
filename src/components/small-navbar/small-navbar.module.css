@@ -1,14 +1,13 @@
-#small-menu-container::-webkit-scrollbar{
-  height: 6px; /* Altura de la barra horizontal (más fina) */
-  width: 3px; /* Ancho de la barra vertical */
+#small-menu-container::-webkit-scrollbar {
+  height: 6px;
+  width: 3px;
 }
 
 .small_navbar_container {
-  /*--------Declaracion de variables para el small navbar component*/
- --small-navbar-fill-color-1:  #171a23;
- --small-navbar-fill-color-2:  #181b24;
- --small-navbar-shadow-color:   rgba(16, 19, 26, 0.32)
- --flat-border-color: #3F4655;
+  --small-navbar-fill-color-1: #171a23;
+  --small-navbar-fill-color-2: #181b24;
+  --small-navbar-shadow-color: rgba(16, 19, 26, 0.32);
+  --flat-border-color: #3f4655;
 
   display: flex;
   flex-direction: column;
@@ -19,26 +18,29 @@
   height: 100dvh;
   z-index: 0;
   gap: 30px;
-  background: linear-gradient(180deg, var(--small-navbar-fill-color-1) 0%, var(--small-navbar-fill-color-2) 100%);
-  box-shadow: drop-shadow(0px 0px 12px  var(--small-navbar-shadow-color));
+  background: linear-gradient(
+    180deg,
+    var(--small-navbar-fill-color-1) 0%,
+    var(--small-navbar-fill-color-2) 100%
+  );
+  box-shadow: drop-shadow(0px 0px 12px var(--small-navbar-shadow-color));
   overflow-y: scroll;
 }
 
-.area_component_container{
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    margin-top: 96px;
-    gap: 8px;
+.area_component_container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin-top: 96px;
+  gap: 8px;
 }
 
-.button_group_container{
-    display: flex;
-    justify-content: center;
-   
+.button_group_container {
+  display: flex;
+  justify-content: center;
 }
 
-.section_3{
+.section_3 {
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -46,7 +48,7 @@
   margin-bottom: 20px;
 }
 
-.flat{
+.flat {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,19 +56,6 @@
   height: 44px;
   border-radius: 12px;
   border-top: 1.6px solid var(--flat-border-color);
-  background: linear-gradient(180deg, #343A47 0%, #2C3140 100%); 
+  background: linear-gradient(180deg, #343a47 0%, #2c3140 100%);
   box-shadow: 0px 5.43px 14.48px 0px rgba(0, 0, 0, 0.15);
-}
-
-/* Breakpoint para hacer desaparecer SOLO el small navbar junto con el toggle menu (700px) */
-@media screen and (max-width: 700px) {
-  /* Aseguramos que estos estilos SOLO afecten al small navbar */
-  .small_navbar_container {
-    opacity: 0 !important;
-    width: 0 !important;
-    overflow: hidden !important;
-    visibility: hidden !important;
-    transition: opacity 0.3s ease, width 0.3s ease !important;
-    pointer-events: none !important;
-  }
 }
