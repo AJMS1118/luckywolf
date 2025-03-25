@@ -98,8 +98,35 @@ export const MenuButton3 = ({ text }: MenuButton3Props) => {
     setIsOpen(!isOpen);
   };
 
+  // Calculamos la altura del dropdown basado en el número de items
+  const dropdownHeight = menuData.length * 44 + 15; // 44px por item + 15px de padding-top
+
   return (
-    <div className={styles.menu_button_wrapper}>
+    <div
+      className={styles.menu_button_wrapper}
+      style={
+        {
+          "--dropdown-space": isOpen ? `${dropdownHeight}px` : "0",
+        } as React.CSSProperties
+      }
+    >
+      {isOpen && (
+        <div className={styles.dropdown_menu}>
+          {menuData.map((item) => (
+            <div key={item.id} className={styles.menu_item}>
+              <Image
+                src={item.icon}
+                alt={item.text}
+                width={20}
+                height={20}
+                style={{ objectFit: "contain" }}
+              />
+              <span className={styles.menu_item_text}>{item.text}</span>
+            </div>
+          ))}
+        </div>
+      )}
+
       <div className={styles.menu_button_container}>
         <div className={styles.section_container}>
           <div className={styles.section_1}>
@@ -122,23 +149,6 @@ export const MenuButton3 = ({ text }: MenuButton3Props) => {
           </div>
         </div>
       </div>
-
-      {isOpen && (
-        <div className={styles.dropdown_menu}>
-          {menuData.map((item) => (
-            <div key={item.id} className={styles.menu_item}>
-              <Image
-                src={item.icon}
-                alt={item.text}
-                width={20}
-                height={20}
-                style={{ objectFit: "contain" }}
-              />
-              <span className={styles.menu_item_text}>{item.text}</span>
-            </div>
-          ))}
-        </div>
-      )}
     </div>
   );
 };

@@ -5,10 +5,11 @@ import styles from "./navbar.module.css";
 import { logo, casino, menu_button, sports, search_icon } from "@/assets";
 
 type NavBarProps = {
+  isOpen: boolean;
   toggleMenu: () => void;
 };
 
-export const NavBar = ({ toggleMenu }: NavBarProps) => {
+export const NavBar = ({ toggleMenu, isOpen }: NavBarProps) => {
   return (
     <header className={styles.nav_container}>
       <div className={styles.header_section_1}>
@@ -17,7 +18,15 @@ export const NavBar = ({ toggleMenu }: NavBarProps) => {
           <span className={styles.logo_text}>Lucky wolf</span>
         </div>
         <div className={styles.menu_button} onClick={toggleMenu}>
-          <Image src={menu_button} alt="" />
+          <Image
+            style={{
+              transform: !isOpen ? "rotate(180deg)" : "rotate(0)",
+              transition: "transform 0.3s ease",
+            }}
+            src={menu_button}
+            alt=""
+            className={styles.menu_button_icon}
+          />
         </div>
         <div className={styles.section_container}>
           <div className={styles.section_container_1}>
