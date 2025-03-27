@@ -1,39 +1,9 @@
 .nav_container {
-  /* -------------------------------------------*/
-  /* Declaracion de variables para el header */
-  /* -------------------------------------------*/
-  --navbar-gradient-color-1: #21242d;
-  --navbar-gradient-color-2: #1c1f28;
-  --navbar-shadow-color: rgba(39, 42, 52, 0.24);
-  --search-border-color: #303541;
-  --search-background-color: #1c202b;
-  --logo-text-color: #ffffff;
-  --singup-button-border-color: rgba(255, 255, 255, 0.15);
-  --singup-button-gradient-color-1: #6a7eff;
-  --singup-button-gradient-color-2: #4962ff;
-  --singup-button-gradient-color-3: #3a55ff;
-  --signup-button-shadow-color: rgba(0, 0, 0, 0.15);
-  --sport-section-background-color-on-hover: #1c202b;
-  --sport-section-shadow-color-on-hover: rgba(0, 0, 0, 0.15);
-  --sh-76-65: calc(0.66vw + 62.52px);
-  --sh-32-12: calc(1.2vw + 7.48px);
-  --sh-20-13: calc(0.42vw + 11.42px);
-  --sh-16-14: calc(0.12vw + 13.55px);
-  --sh-16-10: calc(0.36vw + 8.64px);
-  --sh-24-20: calc(0.24vw + 19.1px);
-  --sh-21-12: calc(0.54vw + 9.97px);
-  --sh-24-12: calc(0.72vw + 9.29px);
-  --sh-192-60: calc(7.95vw + 30.18px);
-
   position: fixed;
   top: 0;
   width: 100dvw;
   height: var(--sh-76-65);
-  background: linear-gradient(
-    152deg,
-    var(--navbar-gradient-color-1),
-    var(--navbar-gradient-color-2)
-  );
+  background: var(--navbar-gradient-background-color);
   box-shadow: 0px 4px 48px 0px var(--navbar-shadow-color) inset;
   z-index: 10;
 }
@@ -54,48 +24,52 @@
 .header_section_1 {
   display: flex;
   align-items: center;
-  flex-grow: 1;
 }
 
 .section_container {
   display: flex;
   align-items: center;
   margin-left: 55px;
-  gap: 25px;
+  gap: var(--sh-43-15);
 }
 
 .section_container_1 {
+  padding: 29px 18px 31px 16px;
   display: flex;
   place-items: center;
   gap: var(--sh-21-12);
   cursor: pointer;
 }
-/* .section_container_1:hover {
+.section_container_1:hover {
   background: var(--sport-section-background-color-on-hover);
   box-shadow: 0px 6px 16px 0px var(--sport-section-shadow-color-on-hover) inset;
-} */
+}
 
 .section_container_2 {
+  padding: 29px 18px 30px 16px;
   display: flex;
   align-items: center;
   gap: 12px;
   cursor: pointer;
 }
 
-/* .section_container_2:hover {
+.section_container_2:hover {
   background: var(--sport-section-background-color-on-hover);
   box-shadow: 0px 6px 16px 0px var(--sport-section-shadow-color-on-hover) inset;
-} */
-
-/* .sport_icon {
-  margin-top: 29px;
-  margin-bottom: 30px;
-} */
+}
 
 .menu_button {
   display: flex;
   align-items: center;
-  margin-left: 24px;
+  justify-content: center;
+  background: var(--menu-button-background-color);
+  border-radius: var(--sh-12-10);
+  border-top: 1px solid #3f4655;
+  cursor: pointer;
+  height: var(--sh-40-32);
+  margin-left: var(--sh-24-20);
+  margin-right: var(--sh-71-16);
+  width: var(--sh-40-32);
 }
 
 .sports_text {
@@ -143,13 +117,12 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-right: var(--sh-192-60);
+    margin-right: var(--sh-192-20);
   }
 
   .menu_search {
-    width: 240px;
+    width: var(--sh-240-150);
     height: 44px;
-    flex-shrink: 0;
     border-radius: 24px;
     border: 1.2px solid var(--search-border-color);
     background: var(--search-background-color);
@@ -165,7 +138,7 @@
 
   .search_icon {
     position: absolute;
-    right: 12px;
+    right: var(--sh-12-4);
     top: 65%;
     transform: translateY(-50%);
     pointer-events: none;
@@ -184,17 +157,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 122px;
+    width: var(--sh-122-100);
     height: 44px;
     flex-shrink: 0;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.15);
-    background: radial-gradient(
-      123.83% 99.06% at 49.75% 0%,
-      var(--singup-button-gradient-color-1) 0%,
-      var(--singup-button-gradient-color-2) 48.44%,
-      var(--singup-button-gradient-color-3) 100%
-    );
+    background: var(--blue-gradient-background-color);
     box-shadow: 0px 5.486px 14.629px 0px var(--singup-button-shadow-color);
 
     .signup_text {
@@ -216,26 +184,6 @@
     padding: 0;
     transition: all 0.3s ease;
   }
-
-  .section_container {
-    gap: 10px;
-    transition: gap 0.3s ease;
-  }
-
-  .header_section_2 {
-    gap: 100px;
-    transition: gap 0.3s ease;
-  }
-
-  .login_section {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-  }
-
-  .signup_button {
-    flex-shrink: 0;
-  }
 }
 
 @media screen and (max-width: 950px) {
@@ -247,12 +195,9 @@
     padding: 0;
     transition: all 0.3s ease;
   }
+}
 
-  .section_container {
-    margin-left: 0;
-    transition: margin 0.3s ease;
-  }
-
+@media screen and (max-width: 750px) {
   .search_container {
     opacity: 0;
     width: 0;
@@ -261,18 +206,12 @@
     overflow: hidden;
     transition: all 0.3s ease;
   }
-
-  .header_section_2 {
-    gap: 0;
-    justify-content: flex-end;
-    transition: all 0.3s ease;
-  }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
   .menu_button {
     opacity: 0;
-    width: 0;
+    max-width: 0;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -288,11 +227,6 @@
     padding: 0;
     overflow: hidden;
     transition: all 0.3s ease;
-  }
-
-  .login_section {
-    margin-right: 20px;
-    transition: margin 0.3s ease;
   }
 }
 
@@ -324,7 +258,7 @@
   }
 }
 
-.signup_text {
+/* .signup_text {
   white-space: nowrap !important;
   display: inline-block !important;
   text-align: center !important;
@@ -339,4 +273,4 @@
   justify-content: center !important;
   text-align: center !important;
   white-space: nowrap !important;
-}
+} */

@@ -1,14 +1,50 @@
 :root {
-  --blue-gradient-color-1: #6a7eff;
-  --blue-gradient-color-2: #4962ff;
-  --blue-gradient-color-3: #3a55ff;
-  --shadow-blue-gradient-color: rgba(0, 0, 0, 0.15);
+  --navbar-gradient-background-color: linear-gradient(
+    152deg,
+    #21242d 17.38%,
+    #1c1f28 82.62%
+  );
+  --navbar-gradient-color-2: #1c1f28;
+  --navbar-shadow-color: rgba(39, 42, 52, 0.24);
+  --search-border-color: #303541;
+  --search-background-color: #1c202b;
+  --logo-text-color: #ffffff;
+  --singup-button-border-color: rgba(255, 255, 255, 0.15);
+  --blue-gradient-background-color: radial-gradient(
+    123.83% 99.06% at 49.75% 0%,
+    #6a7eff 0%,
+    #4962ff 48.44%,
+    #3a55ff 100%
+  );
+
+  --signup-button-shadow-color: rgba(0, 0, 0, 0.15);
+  --sport-section-background-color-on-hover: #1c202b;
+  --sport-section-shadow-color-on-hover: rgba(0, 0, 0, 0.15);
+  --menu-button-background-color: linear-gradient(180deg, #343a47, #2c3140);
+  --sh-76-65: calc(0.66vw + 62.52px);
+  --sh-32-12: calc(1.2vw + 7.48px);
+  --sh-20-13: calc(0.42vw + 11.42px);
+  --sh-16-14: calc(0.12vw + 13.55px);
+  --sh-16-10: calc(0.36vw + 8.64px);
+  --sh-24-20: calc(0.24vw + 19.1px);
+  --sh-21-12: calc(0.54vw + 9.97px);
+  --sh-24-12: calc(0.72vw + 9.29px);
+  --sh-192-60: calc(7.95vw + 30.18px);
+  --sh-12-10: calc(0.12vw + 9.29px);
+  --sh-40-32: calc(0.48vw + 30.19px);
+  --sh-24-20: calc(0.24vw + 19.1px);
+  --sh-192-20: calc(10.36vw + -18.86px);
+  --sh-71-16: calc(3.31vw + 3.58px);
+  --sh-43-15: calc(1.69vw + 8.67px);
+  --sh-240-150: calc(5.42vw + 129.67px);
+  --sh-12-4: calc(0.48vw + 2.19px);
+  --sh-122-100: calc(1.33vw + 95.03px);
 }
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  padding: unset;
+  margin: unset;
 }
 
 ::-webkit-scrollbar {

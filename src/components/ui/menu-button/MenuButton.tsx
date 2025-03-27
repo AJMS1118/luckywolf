@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./menu-button.module.css";
 import Image from "next/image";
-import { heart } from "@/assets";
+import { favorite } from "@/assets";
 
 type MenuButtonProps = {
   text: string;
@@ -13,7 +13,7 @@ export const MenuButton = ({ text, number }: MenuButtonProps) => {
     <div className={styles.menu_button_container}>
       <div className={styles.section_container}>
         <div className={styles.section_1}>
-          <Image src={heart} alt={text} />
+          <Image src={favorite} alt={text} />
           <span className={styles.text}>{text}</span>
         </div>
         <div className={styles.section_2}>
