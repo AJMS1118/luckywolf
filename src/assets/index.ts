@@ -41,6 +41,7 @@ import plain_down_arrow from "./plain_down_arrow.svg";
 import bluecrown from "./bluecrown.svg";
 import heartcontainer from "./heartcontainer.svg";
 import logo1 from "./logo1.png";
+import favorite from "./favoriteheart.svg";
 
 export {
   logo,
@@ -86,4 +87,5 @@ export {
   bluecrown,
   heartcontainer,
   logo1,
+  favorite,
 };
