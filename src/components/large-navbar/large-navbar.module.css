@@ -6,10 +6,8 @@
   display: flex;
   flex-direction: column;
   width: 280px;
-  height: calc(
-    100dvh - 72px
-  ) !important; /* Restamos la altura del NavBar (72px) */
-  top: 72px !important; /* Posicionamos justo debajo del NavBar */
+  height: calc(100dvh - 72px) !important;
+  top: 72px !important;
   left: 0;
   background: linear-gradient(
     180deg,
@@ -18,7 +16,7 @@
   );
   box-shadow: 0px 0px 12px 0px var(--large-navbar-shadow-color);
   overflow-y: scroll !important;
-  z-index: 9 !important; /* Aseguramos que esté por debajo del NavBar (que tiene z-index 10) */
+  z-index: 9 !important;
 }
 
 .area_component_container {
@@ -29,68 +27,43 @@
   margin-top: 96px;
   gap: 16px;
 }
-/* Mantenemos los estilos existentes */
-.large_navbar_container {
-  --large-navbar-background-color-1: #171a23;
-  --large-navbar-background-color-2: #181b24;
-  --large-navbar-shadow-color: rgba(16, 19, 26, 0.32);
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-  height: 100dvh;
-  background: linear-gradient(
-    180deg,
-    var(--large-navbar-background-color-1) 0%,
-    var(--large-navbar-background-color-2) 100%
-  );
-  box-shadow: 0px 0px 12px 0px var(--large-navbar-shadow-color);
-  overflow-y: scroll !important;
-}
 
-/* Nuevo contenedor principal que usa todo el espacio disponible */
 .navbar_content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100%;
-  padding: 16px 0 32px 0 !important; /* Reducimos el padding superior */
+  padding: 16px 0 32px 0 !important;
 }
 
-/* Primera sección con los primeros 4 botones */
 .section_top {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px; /* Mantenemos el mismo gap */
+  gap: 16px;
 }
 
-/* Segunda sección con los últimos componentes */
 .section_bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px; /* Mantenemos el mismo gap */
-  margin-top: 32px; /* Espacio adicional en la parte superior de esta sección */
+  gap: 16px;
+  margin-top: 32px;
 }
 
-/* Si necesitas darle margen inferior específicamente al SocialMedia */
 .section_bottom > *:last-child {
   margin-bottom: 16px;
 }
 
-/* En pantallas medianas y pequeñas donde el toggle aún es visible (hasta 700px) */
 @media screen and (max-width: 950px) {
-  /* No ocultamos automáticamente el Large Navbar, solo ajustamos su posición */
   .large_navbar_container {
-    width: 250px !important; /* Ligeramente más pequeño */
-    z-index: 100 !important; /* Aseguramos que esté por encima */
+    width: 250px !important;
+    z-index: 100 !important;
   }
 }
 
-/* Solo cuando el toggle desaparece (700px), deshabilitamos permanentemente el Large Navbar */
 @media screen and (max-width: 700px) {
   .large_navbar_container {
-    display: none !important; /* Ocultamos completamente el menú */
+    display: none !important;
   }
 }

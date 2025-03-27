@@ -15,13 +15,20 @@
   --signup-button-shadow-color: rgba(0, 0, 0, 0.15);
   --sport-section-background-color-on-hover: #1c202b;
   --sport-section-shadow-color-on-hover: rgba(0, 0, 0, 0.15);
+  --sh-76-65: calc(0.66vw + 62.52px);
+  --sh-32-12: calc(1.2vw + 7.48px);
+  --sh-20-13: calc(0.42vw + 11.42px);
+  --sh-16-14: calc(0.12vw + 13.55px);
+  --sh-16-10: calc(0.36vw + 8.64px);
+  --sh-24-20: calc(0.24vw + 19.1px);
+  --sh-21-12: calc(0.54vw + 9.97px);
+  --sh-24-12: calc(0.72vw + 9.29px);
+  --sh-192-60: calc(7.95vw + 30.18px);
 
   position: fixed;
-  display: flex;
-  /* align-items: center; */
-  justify-content: space-between;
+  top: 0;
   width: 100dvw;
-  height: 72px;
+  height: var(--sh-76-65);
   background: linear-gradient(
     152deg,
     var(--navbar-gradient-color-1),
@@ -31,9 +38,23 @@
   z-index: 10;
 }
 
+.nav_flex_container {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--sh-32-12);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.nav_flex_container .header_section_1 {
+  display: flex;
+  align-items: center;
+}
+
 .header_section_1 {
   display: flex;
-  margin-left: 20px;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .section_container {
@@ -46,97 +67,83 @@
 .section_container_1 {
   display: flex;
   place-items: center;
-  padding: 10px;
-  height: 100%;
+  gap: var(--sh-21-12);
   cursor: pointer;
 }
-.section_container_1:hover {
+/* .section_container_1:hover {
   background: var(--sport-section-background-color-on-hover);
   box-shadow: 0px 6px 16px 0px var(--sport-section-shadow-color-on-hover) inset;
-  /* border-bottom: 2px solid var(--singup-button-gradient-color-2); */
-}
-
-.crownd {
-  margin-top: 29px;
-  margin-bottom: 25px;
-  margin-left: -15px;
-}
+} */
 
 .section_container_2 {
   display: flex;
   align-items: center;
-  height: 100%;
-  padding: 10px;
   gap: 12px;
   cursor: pointer;
 }
 
-.section_container_2:hover {
+/* .section_container_2:hover {
   background: var(--sport-section-background-color-on-hover);
   box-shadow: 0px 6px 16px 0px var(--sport-section-shadow-color-on-hover) inset;
-  /* border-bottom: 2px solid var(--singup-button-gradient-color-2); */
-}
+} */
 
-.sport_icon {
+/* .sport_icon {
   margin-top: 29px;
   margin-bottom: 30px;
-}
+} */
 
 .menu_button {
-  margin-top: 16px;
-  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
   margin-left: 24px;
 }
 
 .sports_text {
   color: var(--logo-text-color);
-  font-size: 16px;
+  font-size: var(--sh-16-14);
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; /* 125% */
-  margin-top: 26px;
-  margin-bottom: 30px;
-  margin-left: -3px;
+  line-height: var(--sh-16-14);
 }
 
 .casino_text {
   color: var(--logo-text-color);
-  font-size: 16px;
+  font-size: var(--sh-16-14);
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; /* 125% */
+  line-height: var(--sh-16-14);
 }
 
 .logo_container {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
 .logo_text {
   color: var(--logo-text-color);
-  font-size: 20px;
+  font-size: var(--sh-20-13);
   font-style: normal;
   font-weight: 800;
-  line-height: 24px;
+  line-height: var(--sh-20-13);
   letter-spacing: -0.2px;
   text-transform: uppercase;
-  margin-top: 26px;
-  margin-bottom: 26px;
 }
 
 .header_section_2 {
   display: flex;
   align-items: center;
-  gap: 192px;
 
   .login_section {
-    margin-right: 32px;
+    display: flex;
+    align-items: center;
   }
 
   .search_container {
     position: relative;
     display: flex;
     align-items: center;
+    margin-right: var(--sh-192-60);
   }
 
   .menu_search {
@@ -146,7 +153,7 @@
     border-radius: 24px;
     border: 1.2px solid var(--search-border-color);
     background: var(--search-background-color);
-    padding: 0 40px 0 16px; /* Add padding for the icon and text */
+    padding: 0 40px 0 16px;
     color: #ffffff;
     font-size: 14px;
   }
@@ -161,26 +168,24 @@
     right: 12px;
     top: 65%;
     transform: translateY(-50%);
-    pointer-events: none; /* Makes the icon not interfere with input clicks */
+    pointer-events: none;
   }
 
   .login_button {
     color: var(--logo-text-color);
-    font-size: 16px;
+    font-size: var(--sh-16-14);
     font-style: normal;
     font-weight: 600;
-    line-height: 20px;
-    margin-right: 24px;
-    margin-top: 27px;
-    margin-bottom: 29px;
+    line-height: var(--sh-20-13);
+    margin-right: var(--sh-24-12);
   }
 
   .signup_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 122px;
     height: 44px;
-    margin-top: 27px;
-    margin-bottom: 29px;
-    padding: 11px 32px 13px;
     flex-shrink: 0;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -194,15 +199,14 @@
 
     .signup_text {
       color: var(--logo-text-color);
-      font-size: 16px;
+      font-size: var(--sh-16-14);
       font-style: normal;
       font-weight: 600;
-      line-height: 20px; /* 125% */
+      line-height: var(--sh-20-13);
     }
   }
 }
 
-/* Breakpoint 1: Desaparece solo menu Casino (1100px) */
 @media screen and (max-width: 1100px) {
   .section_container_2 {
     opacity: 0;
@@ -223,19 +227,17 @@
     transition: gap 0.3s ease;
   }
 
-  /* Aseguramos que los botones de login/signup no se rompan */
   .login_section {
     display: flex;
     align-items: center;
-    flex-shrink: 0; /* Evita que se compriman */
+    flex-shrink: 0;
   }
 
   .signup_button {
-    flex-shrink: 0; /* Asegura que el botón mantenga su tamaño */
+    flex-shrink: 0;
   }
 }
 
-/* Breakpoint 2: Desaparecen Sport y el buscador juntos (950px) */
 @media screen and (max-width: 950px) {
   .section_container_1 {
     opacity: 0;
@@ -267,7 +269,6 @@
   }
 }
 
-/* Breakpoint 3: Desaparece botón de toggle (700px) */
 @media screen and (max-width: 700px) {
   .menu_button {
     opacity: 0;
@@ -279,7 +280,6 @@
   }
 }
 
-/* Breakpoint 4: Desaparece texto del logo (600px) */
 @media screen and (max-width: 600px) {
   .logo_text {
     opacity: 0;
@@ -296,7 +296,6 @@
   }
 }
 
-/* Breakpoint 5: Ajustes finales para móvil (480px) */
 @media screen and (max-width: 480px) {
   .nav_container {
     padding: 0 10px;
@@ -315,7 +314,6 @@
   }
 }
 
-/* Breakpoint muy pequeño (350px) - Ajustes mínimos para mantener la legibilidad */
 @media screen and (max-width: 350px) {
   .login_section {
     margin-right: 5px !important;
@@ -331,10 +329,8 @@
   display: inline-block !important;
   text-align: center !important;
   width: auto !important;
-  transform: translateY(
-    0
-  ) !important; /* Evita que el texto se desplace verticalmente */
-  position: static !important; /* Asegura que no cambie de posición */
+  transform: translateY(0) !important;
+  position: static !important;
 }
 
 .signup_button {

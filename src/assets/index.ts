@@ -38,6 +38,9 @@ import instagram from "./instagram.svg";
 import telegram from "./telegram.svg";
 import support_customer from "./support_customer.svg";
 import plain_down_arrow from "./plain_down_arrow.svg";
+import bluecrown from "./bluecrown.svg";
+import heartcontainer from "./heartcontainer.svg";
+import logo1 from "./logo1.png";
 
 export {
   logo,
@@ -80,4 +83,7 @@ export {
   telegram,
   support_customer,
   plain_down_arrow,
+  bluecrown,
+  heartcontainer,
+  logo1,
 };
